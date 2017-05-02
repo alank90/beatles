@@ -52,10 +52,8 @@ section  {
     font-weight: 600;
     margin-left: 6px;
 }
-section::before  {
-    content: "  ";
-}
-   hr  {
+
+hr  {
       color: #F10708;
       border-style: inset;
       border-width: 3px;
@@ -71,7 +69,6 @@ p  {
     font-size: 1.9rem;
     font-style: normal;
     padding: 3px;
-
     line-height: 2.3rem;
     text-indent: 5rem;
 }
@@ -95,3 +92,9 @@ p.intro  {
         padding-right: 8px;
         padding-left: 3px;
     }
+
+aside  {
+    float:right;
+    width:20vw;
+    margin-right: 15px;
+}
