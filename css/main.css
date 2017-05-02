@@ -1,0 +1,18 @@
+html  {
+/*    reset font-size for rem*/
+    font-size: 62.5%;
+}
+
+/* Makes images fluid */
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1  {
+  font-family: 'Old Standard TT', serif;
+  font-size: 5rem;
+  text-align: center;
+}
+
+#album_cover
