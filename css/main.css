@@ -15,4 +15,7 @@ h1  {
   text-align: center;
 }
 
-#album_cover
+#album_cover  {
+    width: 50rem;
+    margin: 0 auto;
+}
