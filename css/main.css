@@ -16,6 +16,8 @@ h1  {
 }
 
 #album_cover  {
-    width: 50rem;
+    width: 65rem;
+    display: block;
     margin: 0 auto;
+    border-radius: 50%;
 }
