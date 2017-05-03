@@ -94,6 +94,11 @@ html {
     /*    reset font-size for rem*/
     font-size: 62.5%;
 }
+body  {
+    /* Without this, the body has excess horizontal scroll when the menu is open */
+    overflow-x: hidden;
+}
+
 /*CSS for Sticky footer*/
 html, body {
   height: 100%;
@@ -153,7 +158,7 @@ p {
     margin-left: 20px;
     margin-right: 20px;
     font-weight: 500;
-    font-size: 1.9rem;
+    font-size: 2.2rem;
     font-style: normal;
     padding: 3px;
     line-height: 2.3rem;
@@ -170,12 +175,12 @@ p.intro {
     text-indent: 0px;
 }
 
-p.intro:first-child:first-letter {
+p.intro:first-letter {
     color: #F10708;
     float: left;
     font-family: Georgia;
-    font-size: 75px;
-    line-height: 60px;
+    font-size: 100px;
+    line-height: 70px;
     padding-top: 4px;
     padding-right: 8px;
     padding-left: 3px;
@@ -219,7 +224,7 @@ aside {
 
 .theBeatles {
     font-family: Georgia;
-    font-weight: 600;
+    font-weight: 450;
     margin: 10px auto;
 }
 
@@ -233,6 +238,7 @@ aside {
     text-align: center;
     font-size: 2rem;
     font-family: Georgia;
+    z-index: 999;
 }
 
 #footer_menu i:hover:before {
@@ -265,3 +271,90 @@ ul#footer_menu {
     #footer_menu i[class="fa fa-twitter fa-2x"] {
         color: #5DBCEE;
     }
+
+/*CSS for the Slide Out Menu*/
+.navigation {
+    list-style: none;
+    background: #111;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+/* Navigation Menu - List items */
+.nav-item {
+  /* non-critical appearance styles */
+  width: 200px;
+  border-top: 1px solid #111;
+  border-bottom: 1px solid #000;
+}
+
+.nav-item a {
+  /* non-critical appearance styles */
+  display: block;
+  padding: 1em;
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  color: white;
+  font-size: 2.3rem;
+  text-decoration: none;
+  transition: color 0.4s, background 0.5s;
+}
+
+.nav-item a:hover {
+  color: #c74438;
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);
+}
+
+
+.site-wrap {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #fff;
+    position: relative;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    z-index: 1;
+    padding: 4em;
+    background-image: linear-gradient(135deg,
+                      rgb(254,255,255) 0%,
+                      rgb(221,241,249) 35%,
+                      rgb(160,216,239) 100%);
+    background-size: 200%;
+}
+
+.nav-trigger {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+    background-size: contain;
+}
+
+.nav-trigger:checked + label {
+    left: 215px;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+    left: 200px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+.nav-trigger + label, .site-wrap {
+    transition: left 0.3s;
+}
+
