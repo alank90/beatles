@@ -248,7 +248,7 @@ aside {
 ul#footer_menu {
     list-style-type: none;
     margin: 10px auto;
-    max-width: 50vw;
+    width: 50vw;
     /*Control width of footer. It extends past viewport without width. */
 }
 
@@ -312,7 +312,7 @@ ul#footer_menu {
 
 
 .site-wrap {
-    min-width: 100%;
+    min-width: 95%;
     min-height: 100%;
     background-color: #fff;
     position: relative;
@@ -357,4 +357,15 @@ label[for="nav-trigger"] {
 .nav-trigger + label, .site-wrap {
     transition: left 0.3s;
 }
+
+/*Media Queries*/
+@media screen and (max-width: 350px) {
+    ul#footer_menu {
+      min-width: 80vw;
+    }
+    #footer_menu  i{
+       font-size: 2rem;
+    }
+}
+
 
