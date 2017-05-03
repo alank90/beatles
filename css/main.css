@@ -1,70 +1,157 @@
 /* HTML5 Browser reset
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
-
-html  {
-/*    reset font-size for rem*/
+html {
+    /*    reset font-size for rem*/
     font-size: 62.5%;
 }
+/*CSS for Sticky footer*/
+html, body {
+  height: 100%;
+}
+main  {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: 80px;
+}
+   main:after {
+     content: "";
+     display: block;
+     height: 20px;
+   }
+/*End Sticky footer stylings*/
 
 /* Makes images fluid */
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
-h1  {
-  font-family: 'Old Standard TT', serif;
-  font-size: 5rem;
-  text-align: center;
+h1 {
+    font-family: 'Old Standard TT', serif;
+    font-size: 5rem;
+    text-align: center;
 }
 
-#album_cover  {
+h3  {
+    font-family: 'Old Standard TT', serif;
+}
+
+
+#album_cover {
     width: 45rem;
     display: block;
     margin: 0 auto;
     border-radius: 50%;
 }
 
-section  {
+section {
     font-size: 3.2rem;
     font-weight: 600;
     margin-left: 6px;
 }
 
-hr  {
-      color: #F10708;
-      border-style: inset;
-      border-width: 3px;
-    }
+hr {
+    color: #F10708;
+    border-style: inset;
+    border-width: 3px;
+}
 
-p  {
+p {
     font-family: 'Cormorant SC', serif;
-    margin-top:5px;
-    margin-bottom:5px;
-    margin-left:20px;
-    margin-right:20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
     font-weight: 500;
     font-size: 1.9rem;
     font-style: normal;
@@ -73,7 +160,7 @@ p  {
     text-indent: 5rem;
 }
 
-p.intro  {
+p.intro {
     margin: 2rem 1rem;
     font-family: 'Cormorant SC', serif;
     font-weight: 600;
@@ -82,19 +169,99 @@ p.intro  {
     line-height: 2.6rem;
     text-indent: 0px;
 }
-    p.intro:first-child:first-letter {
-        color: #F10708;
-        float: left;
-        font-family: Georgia;
-        font-size: 75px;
-        line-height: 60px;
-        padding-top: 4px;
-        padding-right: 8px;
-        padding-left: 3px;
-    }
 
-aside  {
-    float:right;
-    width:20vw;
-    margin-right: 15px;
+p.intro:first-child:first-letter {
+    color: #F10708;
+    float: left;
+    font-family: Georgia;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
 }
+
+blockquote {
+  font-family: Georgia;
+  font-size: 2rem;
+  max-width: 70vw;
+  background: rgba(244, 15, 15, .5);
+  border-left: 10px solid #F10708;
+  margin: 1.5em 50px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #F10708;
+  content:open-quote;
+  font-size: 4em;
+  line-height: 0.5rem;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote:after {
+  color: #F10708;
+  content: close-quote;
+  font-size: 3em;
+  line-height: .5rem;
+  margin-left: 0.5rem;
+  vertical-align: -0.4em;
+}
+
+aside {
+    float: right;
+    width: 25vw;
+    margin: 10px 15px;
+}
+
+
+.theBeatles {
+    font-family: Georgia;
+    font-weight: 600;
+    margin: 10px auto;
+}
+
+#footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 80px;
+    width: 100%;
+    background: #F10708;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Georgia;
+}
+
+#footer_menu i:hover:before {
+    font-size: 3.6rem;
+}
+
+ul#footer_menu {
+    list-style-type: none;
+    margin: 10px auto;
+    max-width: 50vw;
+    /*Control width of footer. It extends past viewport without width. */
+}
+
+#footer_menu li {
+    display: inline-block;
+    margin: .5rem 3rem;
+}
+
+#footer_menu i {
+    max-height: 3.0rem;
+    max-width: 3.0re
+    /* position:absolute prevents other icons from moving on hover */
+}
+    #footer_menu i[class="fa fa-facebook fa-2x"] {
+        color: #3B5998;
+    }
+    #footer_menu i[class="fa fa-wikipedia-w fa-2x"] {
+        color: black;
+    }
+    #footer_menu i[class="fa fa-twitter fa-2x"] {
+        color: #5DBCEE;
+    }
