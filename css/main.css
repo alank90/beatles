@@ -206,10 +206,8 @@ hr {
 
 p {
     font-family: 'Cormorant SC', serif;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 5px 20px;
+    max-width: 90vw;
     font-weight: 500;
     font-size: 2.2rem;
     font-style: normal;
@@ -278,7 +276,8 @@ aside {
 .theBeatles {
     font-family: Georgia;
     font-weight: 450;
-    margin: 10px auto;
+    margin: 5px 20px;
+    max-width: 90vw;
 }
 
 #footer {
