@@ -124,7 +124,7 @@ main  {
     bottom: 100%;
     left: 0;
     z-index: 1;
-    padding: 4em;
+    padding: 2em;
     background-image: linear-gradient(135deg,
                       rgb(254,255,255) 0%,
                       rgb(205,109,110) 35%,
