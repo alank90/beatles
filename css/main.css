@@ -319,7 +319,8 @@ ul#footer_menu {
     position: fixed;
     left: -8.5em;
     top: 25%;
-    width: 9em;
+    width: 20rem;
+    height: 6rem;
     font-family: 'Old Standard TT', serif;
     font-size: 2.5rem;
     margin: -3em 0 0 0;
@@ -333,10 +334,11 @@ ul#footer_menu {
     padding: 0.5em 2.5em 0.5em 0.5em;
     box-shadow: 0 3px 6px #f9f904;
     border-radius: 0.5rem 7rem 7rem 0.5rem;
-    transition: 0.4s;
-}
+    transition: .4s, height .3s;
+ }
     #menu:hover {
-        left: 0
+        left: 0;
+        height: 20rem;
     }
     #menu li {
         margin: 0;
