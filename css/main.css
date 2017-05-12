@@ -317,9 +317,9 @@ ul#footer_menu {
 /*CSS for the Slide Out Menu */
 #menu {
     position: fixed;
-    right: -8.5em;
+    left: -8.5em;
     top: 25%;
-    width: 8em;
+    width: 9em;
     font-family: 'Old Standard TT', serif;
     font-size: 2.5rem;
     margin: -3em 0 0 0;
@@ -329,14 +329,14 @@ ul#footer_menu {
     font-weight: bold;
     text-align: left;
     border: solid rgba(196, 249, 4, 0.5);
-    border-right: none;
-    padding: 0.5em 0.5em 0.5em 2.5em;
+    border-left: none;
+    padding: 0.5em 2.5em 0.5em 0.5em;
     box-shadow: 0 3px 6px #f9f904;
-    border-radius: 3em 0.5em 0.5em 3em;
+    border-radius: 0.5rem 7rem 7rem 0.5rem;
     transition: 0.4s;
 }
     #menu:hover {
-        right: 0
+        left: 0
     }
     #menu li {
         margin: 0;
@@ -344,9 +344,20 @@ ul#footer_menu {
     #menu a {
       position: relative;
       left: 0;
-      color: inherit;
+      color: #15B5F7;
       transition: 0.2s;
     }
+      #menu a:hover  {
+        color: #f9f904;
+      }
+    ul div {
+       margin-left: 8.5em;
+       transition: visibility .4s ease-in;
+    }
+       ul:hover div {
+         visibility: hidden;
+
+       }
 /*End CSS for Menu*/
 
 /*Media Queries*/
