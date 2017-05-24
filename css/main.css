@@ -141,6 +141,7 @@ img {
     font-size: 9rem;
     font-weight: 700;
     vertical-align: -3rem;
+    transition: vertical-align .5s;
 }
 
 h2 {
@@ -162,13 +163,15 @@ h1 {
     font-weight: 700;
     text-align: center;
     height:auto;
+    transition: font-size .5s linear;
 }
-h1::before  {
-    content: "The";
-    position: relative;
-    top: -4rem;
-    left: 20.5rem;
-}
+    h1::before  {
+       content: "The";
+       position: relative;
+       top: -4rem;
+       left: 20.5rem;
+        transition: left .5s linear, top .5s linear;
+    }
 
 h3  {
     font-family: 'Old Standard TT', serif;
@@ -367,6 +370,26 @@ ul#footer_menu {
 
 /*Media Queries*/
 @media screen and (max-width: 650px) {
+    h1  {
+        font-size: 3rem;
+    }
+        h1::before  {
+            left: 13rem;
+            top: -3rem;
+        }
+        #B  {
+            font-size: 6rem
+        }
+        #t  {
+            font-size: 6rem;
+            vertical-align: -2rem;
+        }
+
+    aside  {
+        float: none;
+        display: block;
+    }
+
     ul#footer_menu {
       min-width: 80vw;
     }
@@ -375,3 +398,20 @@ ul#footer_menu {
     }
 }
 
+
+@media screen and (max-width: 350px)  {
+    h1  {
+        font-size: 2rem;
+    }
+        h1::before  {
+            left: 9.5rem;
+            top: -2rem;
+        }
+        #B  {
+            font-size: 5rem
+        }
+        #t  {
+            font-size: 5rem;
+            vertical-align: -2rem;
+        }
+}
