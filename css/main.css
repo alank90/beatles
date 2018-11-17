@@ -82,336 +82,332 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 html {
-    /*    reset font-size for rem*/
-    font-size: 62.5%;
+  /*    reset font-size for rem*/
+  font-size: 62.5%;
 }
-body  {
-    /* Without this, the body has excess horizontal scroll when the menu is open */
-    overflow-x: hidden;
+body {
+  /* Without this, the body has excess horizontal scroll when the menu is open */
+  overflow-x: hidden;
 }
 
 /*CSS for Sticky footer*/
-html, body {
+html,
+body {
   height: 100%;
 }
-main  {
+main {
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: 80px;
-  background-image: linear-gradient(135deg,
-                      rgb(254,255,255) 0%,
-                      rgb(205,109,110) 35%,
-                      rgb(241,7,8) 100%);
-    background-size: 200%;
+  background-image: linear-gradient(
+    135deg,
+    rgb(254, 255, 255) 0%,
+    rgb(205, 109, 110) 35%,
+    rgb(241, 7, 8) 100%
+  );
+  background-size: 200%;
 }
 
-   main:after {
-     content: "";
-     display: block;
-     height: 20px;
-   }
+main:after {
+  content: "";
+  display: block;
+  height: 20px;
+}
 /*End Sticky footer stylings*/
-
 
 /* Makes images fluid */
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
-
 #B {
-    display:inline-block;
-    font-size: 9rem;
-    font-weight: 700;
-    line-height: 150px;
+  display: inline-block;
+  font-size: 9rem;
+  font-weight: 700;
+  line-height: 150px;
 }
 
 #t {
-    display:inline-block;
-    font-size: 9rem;
-    font-weight: 700;
-    vertical-align: -3rem;
-    transition: vertical-align .5s;
+  display: inline-block;
+  font-size: 9rem;
+  font-weight: 700;
+  vertical-align: -3rem;
+  transition: vertical-align 0.5s;
 }
 
 h2 {
-    font-family: 'Old Standard TT', serif;
-    font-size: 3.2rem;
-    font-weight: 500;
-    text-align: center;
-    margin: 2rem auto;
+  font-family: "Old Standard TT", serif;
+  font-size: 3.2rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 2rem auto;
 }
 
 #title {
-    position: relative
+  position: relative;
 }
-
 
 h1 {
-    font-family: 'Old Standard TT', serif;
-    font-size: 5rem;
-    font-weight: 700;
-    text-align: center;
-    height:auto;
-    transition: font-size .5s linear;
+  font-family: "Old Standard TT", serif;
+  font-size: 5rem;
+  font-weight: 700;
+  text-align: center;
+  height: auto;
+  transition: font-size 0.5s linear;
 }
-    h1::before  {
-       content: "The";
-       position: relative;
-       top: -4rem;
-       left: 20.5rem;
-        transition: left .5s linear, top .5s linear;
-    }
-
-h3  {
-    font-family: 'Old Standard TT', serif;
+h1::before {
+  content: "The";
+  position: relative;
+  top: -4rem;
+  left: 20.5rem;
+  transition: left 0.5s linear, top 0.5s linear;
 }
 
+h3 {
+  font-family: "Old Standard TT", serif;
+}
 
 #album_cover {
-    width: 45rem;
-    display: block;
-    margin: 0 auto;
-    border-radius: 50%;
-    -webkit-filter: drop-shadow(20px 20px 10px rgba(0,0,0,0.9));
-    filter: drop-shadow(20px 20px 10px rgba(0,0,0,0.9));
+  width: 45rem;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  -webkit-filter: drop-shadow(20px 20px 10px rgba(0, 0, 0, 0.9));
+  filter: drop-shadow(20px 20px 10px rgba(0, 0, 0, 0.9));
 }
 
 section {
-    font-size: 3.2rem;
-    font-weight: 600;
-    margin-left: 6px;
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-left: 6px;
 }
 
 hr {
-    color: #F10708;
-    border-style: inset;
-    border-width: 3px;
+  color: #f10708;
+  border-style: inset;
+  border-width: 3px;
 }
 
 p {
-    font-family: 'Cormorant SC', serif;
-    margin: 5px 20px;
-    max-width: 90vw;
-    font-weight: 500;
-    font-size: 2.2rem;
-    font-style: normal;
-    padding: 3px;
-    line-height: 2.3rem;
-    text-indent: 5rem;
+  font-family: "Cormorant SC", serif;
+  margin: 5px 20px;
+  max-width: 90vw;
+  font-weight: 500;
+  font-size: 2.2rem;
+  font-style: normal;
+  padding: 3px;
+  line-height: 2.3rem;
+  text-indent: 5rem;
 }
 
 p.intro {
-    margin: 2rem 1rem;
-    font-family: 'Cormorant SC', serif;
-    font-weight: 600;
-    font-size: 2.6rem;
-    font-style: normal;
-    line-height: 2.6rem;
-    text-indent: 0px;
+  margin: 2rem 1rem;
+  font-family: "Cormorant SC", serif;
+  font-weight: 600;
+  font-size: 2.6rem;
+  font-style: normal;
+  line-height: 2.6rem;
+  text-indent: 0px;
 }
 
-    p.intro:first-letter {
-      color: #F10708;
-      float: left;
-      font-family: Georgia;
-      font-size: 100px;
-      line-height: 70px;
-      padding-top: 4px;
-      padding-right: 8px;
-      padding-left: 3px;
-    }
+p.intro:first-letter {
+  color: #f10708;
+  float: left;
+  font-family: Georgia;
+  font-size: 100px;
+  line-height: 70px;
+  padding-top: 4px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
 
 blockquote {
   font-family: Georgia;
   font-size: 2rem;
   max-width: 70vw;
-  background: rgba(244, 15, 15, .5);
-  border-left: 10px solid #F10708;
+  background: rgba(244, 15, 15, 0.5);
+  border-left: 10px solid #f10708;
   margin: 1.5em 50px;
   padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
+  quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
-    blockquote:before {
-     color: #F10708;
-     content:open-quote;
-     font-size: 4em;
-     line-height: 0.5rem;
-     margin-right: 0.25em;
-     vertical-align: -0.4em;
-    }
+blockquote:before {
+  color: #f10708;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.5rem;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
 
-     blockquote:after {
-      color: #F10708;
-      content: close-quote;
-      font-size: 3em;
-      line-height: .5rem;
-      margin-left: 0.5rem;
-      vertical-align: -0.4em;
-     }
+blockquote:after {
+  color: #f10708;
+  content: close-quote;
+  font-size: 3em;
+  line-height: 0.5rem;
+  margin-left: 0.5rem;
+  vertical-align: -0.4em;
+}
 
 aside {
-    float: right;
-    width: 25vw;
-    margin: 10px 15px;
+  float: right;
+  width: 25vw;
+  margin: 10px 15px;
 }
 
-
 .theBeatles {
-    font-family: Georgia;
-    font-weight: 450;
-    margin: 5px 20px;
-    max-width: 90vw;
+  font-family: Georgia;
+  font-weight: 450;
+  margin: 5px 20px;
+  max-width: 90vw;
 }
 
 #footer {
-    position: fixed;
-    left: 0px;
-    bottom: 0px;
-    height: 80px;
-    width: 100%;
-    background: #F10708;
-    text-align: center;
-    font-size: 2rem;
-    font-family: Georgia;
-    z-index: 999;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 80px;
+  width: 100%;
+  background: #f10708;
+  text-align: center;
+  font-size: 2rem;
+  font-family: Georgia;
+  z-index: 999;
 }
 
 #footer_menu i:hover:before {
-    font-size: 3.6rem;
+  font-size: 3.6rem;
 }
 
 ul#footer_menu {
-    list-style-type: none;
-    margin: 10px auto;
-    width: 50vw;
-    /*Control width of footer. It extends past viewport without width. */
+  list-style-type: none;
+  margin: 10px auto;
+  width: 50vw;
+  /*Control width of footer. It extends past viewport without width. */
 }
 
 #footer_menu li {
-    display: inline-block;
-    margin: .5rem 3rem;
+  display: inline-block;
+  margin: 0.5rem 3rem;
 }
 
 #footer_menu i {
-    max-height: 3.0rem;
-    max-width: 3.0rem;
-    /* position:absolute prevents other icons from moving on hover */
-    transition: font-size 1s;
+  max-height: 3rem;
+  max-width: 3rem;
+  /* position:absolute prevents other icons from moving on hover */
+  transition: font-size 1s;
 }
-    #footer_menu i[class="fa fa-facebook fa-2x"] {
-        color: #3B5998;
-    }
-    #footer_menu i[class="fa fa-wikipedia-w fa-2x"] {
-        color: black;
-    }
-    #footer_menu i[class="fa fa-twitter fa-2x"] {
-        color: #5DBCEE;
-    }
+#footer_menu i[class="fa fa-facebook fa-2x"] {
+  color: #3b5998;
+}
+#footer_menu i[class="fa fa-wikipedia-w fa-2x"] {
+  color: black;
+}
+#footer_menu i[class="fa fa-twitter fa-2x"] {
+  color: #5dbcee;
+}
 
 /*CSS for the Slide Out Menu */
 #menu {
-    position: fixed;
-    left: -20rem;
-    top: 25%;
-    width: 20rem;
-    height: 6rem;
-    font-family: 'Old Standard TT', serif;
-    font-size: 2.5rem;
-    margin: -3em 0 0 0;
-    z-index: 5;
-    background: rgba(241, 7, 8, 0.7);
-    color: white;
-    font-weight: bold;
-    text-align: left;
-    border: solid rgba(196, 249, 4, 0.5);
-    border-left: none;
-    padding: 0.5em 2.5em 0.5em 0.5em;
-    box-shadow: 0 3px 6px #f9f904;
-    border-radius: 0.5rem 7rem 7rem 0.5rem;
-    transition: .4s ease-out, height .3s ease-in;
- }
-    #menu:hover {
-        left: 0;
-        height: 20rem;
-    }
-    #menu li {
-        margin: 0;
-    }
-    #menu a {
-      position: relative;
-      left: 0;
-      color: #15B5F7;
-      transition: 0.2s;
-    }
-      #menu a:hover  {
-        color: #f9f904;
-      }
-    ul div {
-       margin-left: 8.5em;
-       transition: visibility .4s ease-in;
-    }
-       ul:hover div {
-         visibility: hidden;
-
-       }
+  position: fixed;
+  left: -20rem;
+  top: 25%;
+  width: 20rem;
+  height: 6rem;
+  font-family: "Old Standard TT", serif;
+  font-size: 2.5rem;
+  margin: -3em 0 0 0;
+  z-index: 5;
+  background: rgba(241, 7, 8, 0.7);
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  border: solid rgba(196, 249, 4, 0.5);
+  border-left: none;
+  padding: 0.5em 2.5em 0.5em 0.5em;
+  box-shadow: 0 3px 6px #f9f904;
+  border-radius: 0.5rem 7rem 7rem 0.5rem;
+  transition: 0.4s ease-out, height 0.3s ease-in;
+}
+#menu:hover {
+  left: 0;
+  height: 20rem;
+}
+#menu li {
+  margin: 0;
+}
+#menu a {
+  position: relative;
+  left: 0;
+  color: #15b5f7;
+  transition: 0.2s;
+}
+#menu a:hover {
+  color: #f9f904;
+}
+ul div {
+  margin-left: 8.5em;
+  transition: visibility 0.4s ease-in;
+}
+ul:hover div {
+  visibility: hidden;
+}
 /*End CSS for Menu*/
 
 /*Media Queries*/
 @media screen and (max-width: 650px) {
-    h1  {
-        font-size: 3rem;
-    }
-        h1::before  {
-            left: 13rem;
-            top: -3rem;
-        }
-        #B  {
-            font-size: 6rem
-        }
-        #t  {
-            font-size: 6rem;
-            vertical-align: -2rem;
-        }
+  h1 {
+    font-size: 3rem;
+  }
+  h1::before {
+    left: 13rem;
+    top: -3rem;
+  }
+  #B {
+    font-size: 6rem;
+  }
+  #t {
+    font-size: 6rem;
+    vertical-align: -2rem;
+  }
 
-    aside  {
-        float: none;
-        display: block;
-    }
+  aside {
+    float: none;
+    display: block;
+  }
 
-    ul#footer_menu {
-      min-width: 80vw;
-    }
-    #footer_menu  i{
-       font-size: 2rem;
-    }
+  ul#footer_menu {
+    min-width: 80vw;
+  }
+  #footer_menu i {
+    font-size: 2rem;
+  }
 }
 
-
-@media screen and (max-width: 350px)  {
-    h1  {
-        font-size: 2rem;
-    }
-        h1::before  {
-            left: 9.5rem;
-            top: -2rem;
-        }
-        #B  {
-            font-size: 5rem
-        }
-        #t  {
-            font-size: 5rem;
-            vertical-align: -2rem;
-        }
+@media screen and (max-width: 350px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h1::before {
+    left: 9.5rem;
+    top: -2rem;
+  }
+  #B {
+    font-size: 5rem;
+  }
+  #t {
+    font-size: 5rem;
+    vertical-align: -2rem;
+  }
 }
