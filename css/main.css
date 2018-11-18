@@ -1,87 +1,7 @@
 /* HTML5 Browser reset
 */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -94,26 +14,23 @@ html {
   /*    reset font-size for rem*/
   font-size: 62.5%;
 }
+
 body {
   /* Without this, the body has excess horizontal scroll when the menu is open */
   overflow-x: hidden;
 }
 
 /*CSS for Sticky footer*/
-html,
-body {
+
+html, body {
   height: 100%;
 }
+
 main {
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: 80px;
-  background-image: linear-gradient(
-    135deg,
-    rgb(254, 255, 255) 0%,
-    rgb(205, 109, 110) 35%,
-    rgb(241, 7, 8) 100%
-  );
+  background-image: linear-gradient( 135deg, rgb(254, 255, 255) 0%, rgb(205, 109, 110) 35%, rgb(241, 7, 8) 100%);
   background-size: 200%;
 }
 
@@ -122,9 +39,11 @@ main:after {
   display: block;
   height: 20px;
 }
+
 /*End Sticky footer stylings*/
 
 /* Makes images fluid */
+
 img {
   max-width: 100%;
   height: auto;
@@ -165,6 +84,7 @@ h1 {
   height: auto;
   transition: font-size 0.5s linear;
 }
+
 h1::before {
   content: "The";
   position: relative;
@@ -308,17 +228,21 @@ ul#footer_menu {
   /* position:absolute prevents other icons from moving on hover */
   transition: font-size 1s;
 }
+
 #footer_menu i[class="fa fa-facebook fa-2x"] {
   color: #3b5998;
 }
+
 #footer_menu i[class="fa fa-wikipedia-w fa-2x"] {
   color: black;
 }
+
 #footer_menu i[class="fa fa-twitter fa-2x"] {
   color: #5dbcee;
 }
 
 /*CSS for the Slide Out Menu */
+
 #menu {
   position: fixed;
   left: -20rem;
@@ -340,32 +264,40 @@ ul#footer_menu {
   border-radius: 0.5rem 7rem 7rem 0.5rem;
   transition: 0.4s ease-out, height 0.3s ease-in;
 }
+
 #menu:hover {
   left: 0;
   height: 20rem;
 }
+
 #menu li {
   margin: 0;
 }
+
 #menu a {
   position: relative;
   left: 0;
   color: #15b5f7;
   transition: 0.2s;
 }
+
 #menu a:hover {
   color: #f9f904;
 }
+
 ul div {
   margin-left: 8.5em;
   transition: visibility 0.4s ease-in;
 }
+
 ul:hover div {
   visibility: hidden;
 }
+
 /*End CSS for Menu*/
 
 /*Media Queries*/
+
 @media screen and (max-width: 650px) {
   h1 {
     font-size: 3rem;
@@ -381,12 +313,10 @@ ul:hover div {
     font-size: 6rem;
     vertical-align: -2rem;
   }
-
   aside {
     float: none;
     display: block;
   }
-
   ul#footer_menu {
     min-width: 80vw;
   }
